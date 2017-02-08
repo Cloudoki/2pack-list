@@ -27,8 +27,8 @@ let Settings = React.createClass({
         return (
             <Container>
                 <Header style={ {backgroundColor: 'black' }}>
-                    <Button transparent>
-                        <Icon name='ios-arrow-back' onPress={Actions.App}/>
+                    <Button transparent onPress={Actions.pop}>
+                        <Icon name='ios-arrow-back'/>
                     </Button>
                     <Title>Settings</Title>
                 </Header>
