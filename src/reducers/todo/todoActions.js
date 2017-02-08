@@ -1,4 +1,4 @@
-import { ADD_TODO, DELETE_TODO, EDIT_TODO, COMPLETE_TODO} from '../../constants/actionTypes';
+import { ADD_TODO, DELETE_TODO, COMPLETE_TODO} from '../../constants/actionTypes';
 
 
 export function addTodo(text) {

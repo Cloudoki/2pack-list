@@ -17,8 +17,8 @@ import devTools from 'remote-redux-devtools';
 
 /**
 * ## Reducer
-* The reducer contains the 4 reducers from
-* device, global, auth, profile
+* The reducer contains the 2 reducers from
+* todo, settings
 */
 import reducer from '../reducers'
 
@@ -32,7 +32,7 @@ import reducer from '../reducers'
 /**
  * ## configureStore
  * @param {Object} the state with for keys:
- * device, global, auth, profile
+ * todo, settings
  *
  */
 export default function configureStore (initialState) {

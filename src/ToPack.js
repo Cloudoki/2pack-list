@@ -99,7 +99,7 @@ export default function native (platform) {
       return (
 
         <Provider store={store}>
-          <Router sceneStyle={{ backgroundColor: 'pink' }}>
+          <Router sceneStyle={{ backgroundColor: 'white' }}>
             <Scene key='root' hideNavBar>
               <Scene key='App' component={App} type='replace' initial />
               <Scene key='Settings' component={Settings}/>

@@ -1,6 +1,6 @@
 /**
  * # App.js
- *  Display startup screen with the Todo List
+ *  Displays startup screen with the Todo List
  *
  *
  */
