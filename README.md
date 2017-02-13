@@ -47,8 +47,8 @@ react-native run-ios
 ├── index.ios.js              # Entry point for your IOS app into the React Native code
 ├── package.json              # Package configuration. The list of 3rd party libraries and utilities
 ├── README.md                 # This file.
-├── android                   # Directory with all your native Android code
-├── ios                       # Directory with all native IOS code
+├── android                   # Directory with all your Android native code
+├── ios                       # Directory with all your IOS native code
 ├── src                       # Source code
 │   ├── components            # React components
 │   ├── constants             # Application constants including constants for Redux
