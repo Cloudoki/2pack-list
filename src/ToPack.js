@@ -9,11 +9,7 @@
  * Necessary components from ReactNative
  */
 import React from 'react'
-import {
-    AppRegistry,
-    StyleSheet,
-    View,
-    Text } from 'react-native'
+import { AppRegistry } from 'react-native'
 
 /**
  * ### Router-Flux
@@ -40,7 +36,6 @@ import {
  */
 import configureStore from './store/configureStore'
 
-
 /**
  * ### containers
  *
@@ -49,8 +44,6 @@ import configureStore from './store/configureStore'
  */
 import App from './containers/App'
 import Settings from './containers/Settings'
-
-
 
 /**
  * ## States
@@ -89,15 +82,13 @@ function getInitialState () {
 export default function native (platform) {
   let ToPack = React.createClass({
     render () {
-
-          // configureStore will combine reducers from main application
-          // it will then create the store based on aggregate state from all reducers
+      // configureStore will combine reducers from main application
+      // it will then create the store based on aggregate state from all reducers
       const store = configureStore(getInitialState())
 
-          // setup the router table with App selected as the initial component
-          // note: See https://github.com/aksonov/react-native-router-flux/issues/948
+      // setup the router table with App selected as the initial component
+      // note: See https://github.com/aksonov/react-native-router-flux/issues/948
       return (
-
         <Provider store={store}>
           <Router sceneStyle={{ backgroundColor: 'white' }}>
             <Scene key='root' hideNavBar>

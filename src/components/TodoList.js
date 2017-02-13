@@ -14,7 +14,6 @@ import
   StyleSheet,
   View,
   Text,
-  TextInput,
   Image,
   ListView,
   ScrollView,
@@ -22,7 +21,7 @@ import
 } from 'react-native'
 
 import TodoItem from './TodoItem'
-import {Button, InputGroup, Input, Icon} from 'native-base';
+import { InputGroup, Input, Icon } from 'native-base'
 
 /**
  * ## Styles
@@ -57,7 +56,7 @@ let styles = StyleSheet.create({
 let TodoList = React.createClass({
 
   getInitialState () {
-    const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
+    const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2})
     return {
       text: '',
       dataSource: ds.cloneWithRows(this.props.todos)
@@ -79,8 +78,8 @@ let TodoList = React.createClass({
     })
   },
 
-  _onSubmitTodo(text) {
-    if(!text || text === '')
+  _onSubmitTodo (text) {
+    if (!text || text === '')
       return
     this.props.actions.addTodo(text)
     this.setState({text: ''})
@@ -99,7 +98,7 @@ let TodoList = React.createClass({
                        placeholder="What do you need 2pack?"
                        onChangeText={(text) => this._onChangeText(text)}
                        onSubmitEditing={(event) => this._onSubmitTodo(event.nativeEvent.text)}/>
-            <Icon style={{right: 5}} onPress={() => {this._onSubmitTodo(this.state.text)}} name='ios-add'/>
+            <Icon style={{right: 5}} onPress={() => { this._onSubmitTodo(this.state.text) }} name='ios-add'/>
           </InputGroup>
 
           <ListView

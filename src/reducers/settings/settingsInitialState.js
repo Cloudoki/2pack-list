@@ -8,27 +8,27 @@ export default {
     {
       id: 1,
       text: 'Jeans',
-      visible: true,
+      visible: true
     },
     {
       id: 2,
       text: 'Shampoo',
-      visible: false,
+      visible: false
     },
     {
       id: 3,
       text: 'Condoms',
-      visible: false,
+      visible: false
     },
     {
       id: 4,
       text: 'Shoes',
-      visible: false,
+      visible: false
     },
     {
       id: 5,
       text: 'Camera',
-      visible: true,
+      visible: true
     }
   ]
-};
+}

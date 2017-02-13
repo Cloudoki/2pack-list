@@ -12,7 +12,7 @@
  */
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
-import { Actions } from 'react-native-router-flux';
+import { Actions } from 'react-native-router-flux'
 
 /**
  * Project actions
@@ -26,12 +26,10 @@ import React from 'react'
 import
 {
     StyleSheet,
-    View,
-    Text
+    View
 }
 from 'react-native'
-import {Button, Icon} from 'native-base';
-
+import {Button, Icon} from 'native-base'
 
 import TodoList from '../components/TodoList'
 
@@ -40,7 +38,7 @@ import TodoList from '../components/TodoList'
  */
 function mapStateToProps (state) {
   return {
-    todos : state.todos,
+    todos: state.todos,
     settings: state.settings
   }
 }
@@ -56,7 +54,7 @@ function mapDispatchToProps (dispatch) {
 
 let styles = StyleSheet.create({
   container: {
-    padding: 10,
+    padding: 10
   },
   button: {
     width: 50,
@@ -77,11 +75,10 @@ let styles = StyleSheet.create({
 let reactMixin = require('react-mixin')
 import TimerMixin from 'react-timer-mixin'
 
-
 let App = React.createClass({
 
   render () {
-  const goToSettings = () => Actions.Settings({settings: this.props.settings});
+    const goToSettings = () => Actions.Settings({settings: this.props.settings})
     return (
       <View style={styles.container}>
         <View style={styles.wrapper}>
