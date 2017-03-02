@@ -31,7 +31,7 @@ import {
 /**
  * ### configureStore
  *
- *  ```configureStore``` will connect the ```reducers```, the
+ *  ```configureStore``` will connect the ```reducers```
  *
  */
 import configureStore from './store/configureStore'
