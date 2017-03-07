@@ -8,12 +8,12 @@ A simple To-Pack List App for HackFridays: Mobile React 101 package.
 
 * [Getting Started with React-Native](https://facebook.github.io/react-native/docs/getting-started.html#content)
 
-2.  Clone 2pack-list: 
+2. Clone 2pack-list: 
 ```
 https://github.com/Cloudoki/2pack-list.git
 ```
 
-3.  Install project dependencies:
+3. Install project dependencies:
 ```
   npm install
 ```
@@ -24,7 +24,7 @@ After following the React Native's tutorial and installing all the project depen
 
 ### Run React Native Packager
 
-The [React Native Packager](https://github.com/facebook/react-native/tree/master/packager) is similar to Webpack, providing it 
+The [React Native Packager](https://github.com/facebook/react-native/tree/master/packager) is similar to Webpack, providing a CommonJS-like module system, JavaScript compilation (ES6, Flow, JSX), bundling, and asset loading.
 ```
 react-native start
 ```
@@ -35,7 +35,9 @@ react-native start
 1. In Android Studio, open the project located in the `android` folder.
 2. Go to Tools -> Android -> AVD Manager
 3. Create a Virtual Device 
+
 ![alt tag](https://files.slack.com/files-pri/T0FHJBVU2-F4C4RG2PP/pasted_image_at_2017_03_01_01_00_pm.png)
+
 4. Run your Virtual Device
 5. Finally run the app with `react-native run-android`
 
