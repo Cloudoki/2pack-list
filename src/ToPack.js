@@ -9,7 +9,7 @@
  * Necessary components from ReactNative
  */
 import React from 'react'
-import { AppRegistry } from 'react-native'
+import { AppRegistry, Platform } from 'react-native'
 
 /**
  * ### Router-Flux
@@ -103,6 +103,7 @@ export default function native (platform) {
     /**
      * registerComponent to the AppRegistery and off we go....
      */
+  const registryName = (Platform.OS === 'ios') ? 'ToPack' : 'topack'
 
-  AppRegistry.registerComponent('topack', () => ToPack)
+  AppRegistry.registerComponent(registryName, () => ToPack)
 }
