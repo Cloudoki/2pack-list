@@ -40,6 +40,8 @@ react-native start
 
 The process for running your app in iOS is more straightforward. Just run `react-native run-ios` command and you should see your app running in the iOS Simulator shortly. You can also run it directly from within Xcode by opening the project located in `ios/ToPack.xcodeproj`.
 
+**Note:** If you want to test your app on an actual device, follow the instructions [Running on Device](https://facebook.github.io/react-native/docs/running-on-device.html).
+
 
 ## Project File Structure
 ```
