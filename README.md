@@ -4,16 +4,12 @@ A simple To-Pack List App for HackFridays: Mobile React 101 package.
 
 ## Installation
 
-1. Please make sure to carefully follow all the instructions on React Native's official documentation depending on your development operating system:
+1.  Please make sure to carefully follow all the instructions on React Native's official documentation depending on your development operating system:
+[Getting Started with React-Native](https://facebook.github.io/react-native/docs/getting-started.html#content)
 
-* [Getting Started with React-Native](https://facebook.github.io/react-native/docs/getting-started.html#content)
+2.  Clone 2pack-list: `https://github.com/Cloudoki/2pack-list.git`
 
-2. Clone 2pack-list: 
-```
-https://github.com/Cloudoki/2pack-list.git
-```
-
-3. Install project dependencies:
+3.  Install project dependencies:
 ```
   npm install
 ```
@@ -31,19 +27,17 @@ react-native start
 
 ### Running the App
 
-* Android:
-1. In Android Studio, open the project located in the `android` folder.
-2. Go to Tools -> Android -> AVD Manager
-3. Create a Virtual Device 
+* For Android:
 
-![alt tag](https://files.slack.com/files-pri/T0FHJBVU2-F4C4RG2PP/pasted_image_at_2017_03_01_01_00_pm.png)
+1.  In Android Studio, open the project located in the `android` folder.
+2.  Go to Tools -> Android -> AVD Manager
+3.  Create a Virtual Device 
+![alt tag](./screenshots/AVD.png)
+4.  Run your Virtual Device
+5.  Finally run the app with `react-native run-android`
 
-4. Run your Virtual Device
-5. Finally run the app with `react-native run-android`
-
-
-For Android: `react-native run-android`
-For iOS:     `react-native run-ios`
+* For iOS:
+`react-native run-ios`
 
 
 ## Project File Structure
