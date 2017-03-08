@@ -1,9 +1,10 @@
 import { ADD_TODO, DELETE_TODO, COMPLETE_TODO } from '../../constants/actionTypes'
 
-export function addTodo (text) {
+export function addTodo (text, id) {
   return {
     type: ADD_TODO,
-    text: text
+    text: text,
+    id: id
   }
 }
 

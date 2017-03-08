@@ -68,7 +68,7 @@ let TodoItem = React.createClass({
     })
 
     if (!setting.visible) {
-      this.props.actions.addTodo(setting.text)
+      this.props.actions.addTodo(setting.text, setting.id)
     } else {
       this.props.actions.deleteTodo(setting.id)
     }
